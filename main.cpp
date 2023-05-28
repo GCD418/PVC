@@ -33,7 +33,7 @@ void vsimples(){
     cin >> a;
     cout << "Y grupos de cuantos elementos vamos a formar?" << endl;
     cin >> b;
-    cout << (fact[a] / (fact[min(0, a - b)])) << endl;
+    cout << (fact[a] / (fact[max(0, a - b)])) << endl;
 }
 
 unsigned long long elevar(unsigned long long a, long long b)
@@ -62,7 +62,7 @@ void crepeticion(){
     cin >> t;
     cout << "Y grupos de cuantos elementos vamos a formar?";
     cin >> c;
-    cout << (fact[t + c + 1] / (fact[c] * fact[max(0, t - 1)])) << endl;
+    cout << (fact[t + c - 1] / (fact[c] * fact[max(0, t - 1)])) << endl;
 }
 void csimples(){
     int t, c;
