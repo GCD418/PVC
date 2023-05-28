@@ -138,12 +138,12 @@ void factInit()
     {
         x *= i;
         fact[i] = x;
-        cout << "SDD = " << x << endl;
+        //cout << "SDD = " << x << endl;
     }
-    ffor(i, 0, 19)
+    /*ffor(i, 0, 19)
     {
         cout << fact[i] << endl;
-    }
+    }*/
 }
 
 int main() {
@@ -157,6 +157,7 @@ int main() {
         cout<<"1.-Permutacion"<<endl;
         cout<<"2.-Variacion"<<endl;
         cout<<"3.-Combinacion"<<endl;
+        cout<<"4.-Salir"<<endl;
         cin>>n;
         switch(n)
         {
@@ -169,6 +170,9 @@ int main() {
             case 3:
                 combinacion();
                 break;
+            default:
+                exit(0);
+
         }
     }
     return 0;
